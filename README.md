@@ -23,9 +23,8 @@ It is a very first project in the Ruby curriculum. We are needed to implement th
 
 👤 **Karthick**
 
-- Github: []()
-- Twitter: []()
-- Linkedin: []()
+- Github: [@karthykarthick](https://github.com/karthykarthick)
+- Linkedin: [@karthick](https://www.linkedin.com/in/karthick-harimoorthy/)
 
 👤 **Prabhakar Pandey**
 
