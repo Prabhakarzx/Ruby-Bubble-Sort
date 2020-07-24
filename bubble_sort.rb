@@ -7,16 +7,32 @@ def bubble_sort
     total_items = gets.chomp
 
     i=total_items.to_i
-    array_item = []
+    array = []
 
-    i.times do |i|
-        array_item[i] = gets.chomp
+    0.upto(i-1) do |i|
+        array[i] = gets.chomp
     end
 
     puts "Total Number of items in the array is:  #{total_items}"
 
-    puts "You're array is #{array_item}"
+    puts "Youre array is #{array}"
 
-    puts "\nAnd sorted array is #{array_item.sort}"
+    array.each do
+        i = 0
+        count = 0
+        while i < array.length - 1
+            if array[i] > array[i + 1]
+              temp = array[i]
+              array[i] = array[i + 1]
+              array[i + 1] = temp
+            end
+            i += 1
+            count += 1
+        end
+          break if count.zero?
+        end
 
+    puts "\nAnd sorted array is #{array}"
 end
+
+bubble_sort()
