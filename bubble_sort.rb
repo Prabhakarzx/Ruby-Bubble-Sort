@@ -40,8 +40,22 @@ choice = gets.chomp
 
 if choice=='y' || choice == 'Y'
 
+    def bubble_sort_by(arr)
+        for i in 0..arr.length-2 do
+          for j in 0..arr.length-2 do
+            if (yield arr[j], arr[j+1]) > 0
+              arr[j], arr[j+1] = arr[j+1], arr[j]
+            end
+          end
+        end
+      return arr
+    end
 
+     sorted_array= bubble_sort_by(["hi","hello","hey"]) do |left,right|
+        left.length - right.length
+        end
+    puts sorted_array.join(',')
  
 end
 
-print "Thank You!\n"
+print "\nThank You!\n"
