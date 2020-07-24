@@ -22,9 +22,7 @@ def bubble_sort
         count = 0
         while i < items- 1
             if array[i] > array[i + 1]
-              temp = array[i]
-              array[i] = array[i + 1]
-              array[i + 1] = temp
+                array[i], array[i+1] = array[i+1], array[i]
             end
             i += 1
             count += 1
@@ -36,3 +34,4 @@ def bubble_sort
 end
 
 bubble_sort()
+
