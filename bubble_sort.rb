@@ -33,3 +33,15 @@ def bubble_sort
 end
 
 bubble_sort
+
+puts "\nDo you want to run bubble_sort_by method with predifine values? Y/N"
+
+choice = gets.chomp
+
+if choice=='y' || choice == 'Y'
+
+
+ 
+end
+
+print "Thank You!\n"
