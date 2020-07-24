@@ -6,10 +6,10 @@ def bubble_sort
 
     total_items = gets.chomp
 
-    i=total_items.to_i
+    items=total_items.to_i
     array = []
 
-    0.upto(i-1) do |i|
+    0.upto(items-1) do |i|
         array[i] = gets.chomp
     end
 
@@ -20,7 +20,7 @@ def bubble_sort
     array.each do
         i = 0
         count = 0
-        while i < array.length - 1
+        while i < items- 1
             if array[i] > array[i + 1]
               temp = array[i]
               array[i] = array[i + 1]
@@ -29,8 +29,8 @@ def bubble_sort
             i += 1
             count += 1
         end
-          break if count.zero?
-        end
+        break if count.zero?
+    end
 
     puts "\nAnd sorted array is #{array}"
 end
