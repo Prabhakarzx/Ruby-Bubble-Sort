@@ -1,5 +1,4 @@
-#!/usr/bin/env ruby
-# frozen_string_literal: true
+#!/usr/bin/ruby
 
 def bubble_sort
   puts 'Enter number of items'
@@ -34,28 +33,20 @@ end
 
 bubble_sort
 
-puts "\nDo you want to run bubble_sort_by method with predifine values? Y/N"
-
-choice = gets.chomp
-
-if choice=='y' || choice == 'Y'
-
-    def bubble_sort_by(arr)
-        for i in 0..arr.length-2 do
-          for j in 0..arr.length-2 do
-            if (yield arr[j], arr[j+1]) > 0
-              arr[j], arr[j+1] = arr[j+1], arr[j]
-            end
+  def bubble_sort_by(arr)
+      for i in 0..arr.length-2 do
+        for j in 0..arr.length-2 do
+          if (yield arr[j], arr[j + 1]) > 0
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
           end
         end
-      return arr
-    end
+      end
+    return arr
+  end
 
-     sorted_array= bubble_sort_by(["hi","hello","hey"]) do |left,right|
+     sorted_array= bubble_sort_by(['hi' , 'hello' , 'hey']) do |left , right|
         left.length - right.length
         end
-    puts sorted_array.join(',')
+    puts sorted_array.join(' , ')
  
-end
-
 print "\nThank You!\n"
