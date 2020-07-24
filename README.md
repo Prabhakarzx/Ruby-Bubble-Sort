@@ -21,7 +21,7 @@ It is a very first project in the Ruby curriculum. We are needed to implement th
 
 ## Author
 
-👤 **Rocio Martinez**
+👤 **Karthick**
 
 - Github: []()
 - Twitter: []()
