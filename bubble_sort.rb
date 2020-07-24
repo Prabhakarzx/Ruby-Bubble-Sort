@@ -34,9 +34,9 @@ end
 bubble_sort
 
   def bubble_sort_by(arr)
-      for i in 0..arr.length-2 do
-        for j in 0..arr.length-2 do
-          if (yield arr[j], arr[j + 1]) > 0
+      for i in 0..arr.length - 2 do
+        for j in 0..arr.length - 2 do
+          if (yield arr[j], arr[j + 1]).positive?
             arr[j], arr[j + 1] = arr[j + 1], arr[j]
           end
         end
@@ -44,9 +44,8 @@ bubble_sort
     return arr
   end
 
-     sorted_array= bubble_sort_by(['hi' , 'hello' , 'hey']) do |left , right|
+      sorted_array = bubble_sort_by(['hi', 'hello', 'hey']) do |left, right|
         left.length - right.length
-        end
-    puts sorted_array.join(' , ')
- 
+      end
+  puts sorted_array.join(',')
 print "\nThank You!\n"
