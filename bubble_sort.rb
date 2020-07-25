@@ -1,21 +1,5 @@
-
-def bubble_sort
-	puts 'Enter number of items'
-
-	total_items = gets.chomp
-
-	items = total_items.to_i
-
-	array = []
-
-	0.upto(items - 1) do |i|
-		array[i] = gets.chomp
-	end
-
-	puts "Total Number of items in the array is:  #{total_items}"
-
-	puts "Youre array is #{array}"
-
+def bubble_sort(array)
+	items=array.length
 	array.each do
 		i = 0
 		count = 0
@@ -26,11 +10,9 @@ def bubble_sort
 		end
 		break if count.zero?
 	end
-
-	puts "\nAnd sorted array is #{array}"
 end
+bubble_sort([3, 63, 9, 2, 0, 2])
 
-bubble_sort
 
 def bubble_sort_by(arr)
 	for i in 0..arr.length - 2 do
@@ -46,5 +28,4 @@ end
 sorted_array = bubble_sort_by(['hi', 'hello', 'hey']) do |left, right|
 	left.length - right.length
 end
-puts sorted_array.join(',')
-print "\nThank You!\n"
+
