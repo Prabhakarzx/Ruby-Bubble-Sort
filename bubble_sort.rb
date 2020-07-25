@@ -14,9 +14,8 @@ end
 
 bubble_sort([3, 63, 9, 2, 0, 2])
 
-
 def bubble_sort_by(arr)
-  for i in 0..arr.length - 2 do
+  (0..arr.length - 2).each do |i|
     if (yield arr[i], arr[i + 1]).positive?
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
     end
@@ -25,4 +24,5 @@ def bubble_sort_by(arr)
 end
 
 bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
+
 
