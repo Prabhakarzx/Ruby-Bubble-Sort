@@ -13,7 +13,7 @@ It is a very first project in the Ruby curriculum. We are needed to implement th
 
 - Download or clone the repository's files
 - Run the code in your local ide
-- Additionally, You can go to https://repl.it and select language ruby, copy paste the meethod.
+- Additionally, You can go to https://repl.it and select language ruby, copy paste the method.
 
 ## Author
 
